@@ -41,7 +41,7 @@ const CartItems = ({ cartItem }) => {
           <h4 className="sm:text-xl  capitalize">product</h4>
           <div className="w-full flex-col gap-1 flex justify-center items-center">
             <img
-              src={`http://localhost:8000/uploads/${imgpath}`}
+              src={imgpath}
               className="w-[50px] mx-auto object-fit-contain"
               alt=""
             />

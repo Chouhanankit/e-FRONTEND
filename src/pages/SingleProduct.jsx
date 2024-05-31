@@ -49,7 +49,7 @@ const SingleProduct = () => {
       <div className="bg-zinc-800 rounded-sm p-3 flex gap-3">
         <div className="w-[30%]">
           <img
-            src={`http://localhost:8000/uploads/${imgpath}`}
+            src={imgpath}
             className="w-full h-full object-cover"
             alt="img"
           />

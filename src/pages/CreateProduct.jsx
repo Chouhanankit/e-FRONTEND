@@ -27,7 +27,7 @@ const CreateProduct = () => {
       },
     };
     const res = await axios.post(
-      "http://localhost:8000/api/admin/createpost",
+      "https://e-backend-zjo7.onrender.com/api/admin/createpost",
       formData,
       config
     );

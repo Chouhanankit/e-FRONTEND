@@ -8,7 +8,7 @@ const Product = () => {
   const { user } = useSelector((state) => state.auth);
   // console.log(productData);
   const getProductData = async () => {
-    const res = await axios.get("http://localhost:8000/api/admin/getdata", {
+    const res = await axios.get("https://e-backend-zjo7.onrender.com/api/admin/getdata", {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${user.token}`,

@@ -22,7 +22,7 @@ const Login = () => {
   };
 
   const loginWithGoogle = () => {
-    window.open("http://localhost:8000/auth/google/callback", "_self");
+    window.open("https://e-backend-zjo7.onrender.com/auth/google/callback", "_self");
   };
 
   useEffect(() => {

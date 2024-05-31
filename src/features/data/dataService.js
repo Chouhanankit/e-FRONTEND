@@ -9,7 +9,7 @@ const getDatas = async (token) => {
       Authorization: `Bearer ${token}`,
     },
   };
-  const response = await axios.get(API_URL, option);
+  const response = await axios.get("https://e-backend-zjo7.onrender.com", option);
   return response.data;
   //   console.log(response);
 };
@@ -22,7 +22,7 @@ const getData = async (id, token) => {
     },
   };
   // console.log(id);
-  const response = await axios.get(API_URL + "/" + id, option);
+  const response = await axios.get("https://e-backend-zjo7.onrender.com/" + id, option);
   return response.data;
 };
 
@@ -33,7 +33,7 @@ const closeData = async (id, token) => {
       Authorization: `Bearer ${token}`,
     },
   };
-  const response = await axios.delete(API_URL + "/" + id, option);
+  const response = await axios.delete("https://e-backend-zjo7.onrender.com/" + id, option);
   window.location.reload();
   return response.data;
 };
@@ -46,7 +46,7 @@ const createData = async (formdata, token) => {
       Authorization: `Bearer ${token}`,
     },
   };
-  const response = await axios.post(API_URL, formdata, option);
+  const response = await axios.post("https://e-backend-zjo7.onrender.com", formdata, option);
   // console.log(response.data);
   return response.data;
 };

@@ -8,7 +8,7 @@ const getUsers = async (token) => {
       Authorization: `Bearer ${token}`,
     },
   };
-  const response = await axios.get(API_URL + "/users", option);
+  const response = await axios.get("https://e-backend-zjo7.onrender.com/api/users", option);
   return response.data;
 };
 
@@ -18,7 +18,7 @@ const getDatas = async (token) => {
       Authorization: `Bearer ${token}`,
     },
   };
-  const response = await axios.get(API_URL + "/datas", option);
+  const response = await axios.get("https://e-backend-zjo7.onrender.com/api/users/datas", option);
   return response.data;
 };
 
